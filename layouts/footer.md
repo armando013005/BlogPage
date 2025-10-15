@@ -1,1 +1,1 @@
-NOT DEFAULsssss
+©2025 armando orozco

@@ -3,7 +3,9 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-   <meta name="description" content="">  
+   <meta name="description" content="What is this? This is my blog page where I might or might not post interesting stuff that I have learned through my time.
+Building process I build this page with HUGO, a framework that offers a diverse set of templates to create a page of your own. I got a domain from porkbun.com and then hosted using GitHub pages.
+Everything is very straightforward, after downloading the dependencies, which is only, Go and the HUGO framework itself.">  
 
   <title>
     
@@ -30,8 +32,8 @@
                     <a href="/">..</a>
 
                     <p>
-                        <time datetime="2025-10-15 14:21:41 -0700 PDT">
-                            2025-10-15
+                        <time datetime="2024-06-08 15:11:22 -0700 PDT">
+                            2024-06-08
                         </time>
                     </p>
                 </div>
@@ -41,7 +43,36 @@
 
     
 
-    
+    <h2 id="what-is-this">What is this?</h2>
+<p>This is my blog page where I might or might not post interesting stuff that I have learned through my time.</p>
+<h3 id="building-process">Building process</h3>
+<p>I build this page with <a href="https://gohugo.io/">HUGO</a>, a framework that offers a diverse set of templates to create a page of your own. I got a domain from <a href="https://porkbun.com">porkbun.com</a> and then hosted using <a href="https://github.com/">GitHub</a> pages.</p>
+<p>Everything is very straightforward, after downloading the <a href="https://gohugo.io/installation/windows/#prerequisites">dependencies</a>, which is only, Go and the <a href="https://gohugo.io/">HUGO</a> framework itself.</p>
+<p>I installed the HUGO framework by <a href="https://chocolatey.org/">Chocolatey</a> and ran the command</p>
+<pre tabindex="0"><code class="language-CLI" data-lang="CLI">choco install hugo-extended
+</code></pre><p>after this and of course with git pre-installed I ran a command</p>
+<pre tabindex="0"><code class="language-CLI" data-lang="CLI">hugo new site YOUR SITE NAME
+cd YOUR SITE NAME
+git init
+cd themes
+git submodule add &#34;YOUR THEME REPO&#34;
+cd..
+echo &#34;theme = &#39;THEME NAME&#39;&#34; &gt;&gt; hugo.toml
+hugo server
+</code></pre><p>It is important to mention that sometimes the line</p>
+<pre tabindex="0"><code class="language-CLI" data-lang="CLI">echo &#34;theme = &#39;THEME NAME&#39;&#34; &gt;&gt; hugo.toml
+</code></pre><p>Does not work, because for some reason the console will take the symbol &rsquo; as a Unicode symbol, and it will write trash in the created file, so manual modification is required. Just write inside the <code>hugo.toml</code> file <code>theme = 'THEME NAME'</code> inside, obviously replace &ldquo;THEME NAME&rdquo; with the name of the theme you are using.</p>
+<h3 id="creating-posts">Creating posts</h3>
+<p>Creating a post in HUGO is as easy as creating the file. Content in HUGO works with markdown files which later are translated by HUGO to HTML.</p>
+<p>You only need one command, and know <a href="https://www.markdownguide.org/">markdown</a>, which is very intuitive. I know pretty sure that LaTeX is also <a href="https://gohugo.io/content-management/mathematics/">supported</a> but is something that I have not tried.</p>
+<p>To start a new post the command is</p>
+<pre tabindex="0"><code class="language-CLI" data-lang="CLI">hugo new create content/myPost.md
+</code></pre><p>There&rsquo;s also different tags that you can use to make your posts more customized. It is nessaary to mention that the post will now show on your page until you set <code>draft = true</code> to <code>false</code> or you can have your post as a draft and run</p>
+<pre tabindex="0"><code class="language-CLI" data-lang="CLI">hugo server -D
+</code></pre><h3 id="that-easy">That easy?</h3>
+<p>And that&rsquo;s it, this is how you can create a page like this or like my <a href="armando.ooo">resume page</a> with basically only markdown and maybe LaTeX, but other knowledge is not necessary.</p>
+<p>Building pages with HUGO is not a skill that will give you a job or something similar, is just something that could save you time and effort if your goal is just to show off your resume, or post silly things with a more customizable suit.</p>
+
 </article>
 
             </div>

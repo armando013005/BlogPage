@@ -6,7 +6,21 @@
     <description>Recent content on armando&#39;s blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate></lastBuildDate>
+    <lastBuildDate>Wed, 15 Oct 2025 15:15:42 -0700</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Poems</title>
+      <link>http://localhost:1313/poems/</link>
+      <pubDate>Wed, 15 Oct 2025 15:15:42 -0700</pubDate>
+      <guid>http://localhost:1313/poems/</guid>
+      <description>about Compilation of the poems that I used in my essay to make work easy&#xA;Cenizas by Alejandra Pizarnik&#xA;La noche se astilló de estrellas&#xA;mirándome alucinada&#xA;el aire arroja odio&#xA;embellecido su rostro&#xA;con música.&#xA;Pronto nos iremos&#xA;Arcano sueño&#xA;antepasado de mi sonrisa&#xA;el mundo está demacrado&#xA;y hay candado pero no llaves&#xA;y hay pavor pero no lágrimas.&#xA;¿Qué haré conmigo?&#xA;Porque a Ti te debo lo que soy</description>
+    </item>
+    <item>
+      <title>This Page</title>
+      <link>http://localhost:1313/posts/this-page/</link>
+      <pubDate>Sat, 08 Jun 2024 15:11:22 -0700</pubDate>
+      <guid>http://localhost:1313/posts/this-page/</guid>
+      <description>What is this? This is my blog page where I might or might not post interesting stuff that I have learned through my time.&#xA;Building process I build this page with HUGO, a framework that offers a diverse set of templates to create a page of your own. I got a domain from porkbun.com and then hosted using GitHub pages.&#xA;Everything is very straightforward, after downloading the dependencies, which is only, Go and the HUGO framework itself.</description>
+    </item>
   </channel>
 </rss>

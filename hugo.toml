@@ -1,4 +1,7 @@
-baseURL = "http://localhost/"
+baseURL = "http://blog.armando.ooo/"
 languageCode = "en-us"
 title = "armando's blog"
 theme = "nostyleplease"
+
+[markup.goldmark.renderer]
+  unsafe = true
