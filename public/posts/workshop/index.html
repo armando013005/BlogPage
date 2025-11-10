@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-us"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=37433&amp;path=livereload" data-no-instant defer></script>
+<html lang="en-us"><head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -18,7 +18,7 @@ This guide is centered on creating a website that displays your abilities as a c
   
   
   
-  <link rel="stylesheet" href="/css/main.900100e9dbee2d56c58fac8bb717037cae7e26a9c36c29d2ff587bdd65f0cbbe510b41d81a3bb234919cdfdc7550d786b2fab70c8fc507772d732fe097106d12.css" integrity="sha512-kAEA6dvuLVbFj6yLtxcDfK5&#43;JqnDbCnS/1h73WXwy75RC0HYGjuyNJGc39x1UNeGsvq3DI/FB3ctcy/glxBtEg==" />
+  <link rel="stylesheet" href="/css/main.51652302d3a998bf7887aed5c2cf89141bbebdf45a2c8f87b0717a3cf4f51c4e53c694c328fb1de78c3a625a1c01f80745bf1f2f42c040647a245cbbb6c2d1d7.css" integrity="sha512-UWUjAtOpmL94h67Vws&#43;JFBu&#43;vfRaLI&#43;HsHF6PPT1HE5TxpTDKPsd54w6YlocAfgHRb8fL0LAQGR6JFy7tsLR1w==" />
   
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -137,10 +137,32 @@ This also works for the page webpage icon</p>
 <h3 id="other-files">Other files</h3>
 <p>To share other files like resume PDFs or project images, the files should be placed in the static folder; from there you can call them from the config file.</p>
 <h2 id="deploy">Deploy</h2>
-<p>copy the <a href="/files/workshop/hugo.txt">hugo.yaml</a> into a new directory called</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>.github/workflows/
-</span></span></code></pre></div><p>There you can place the file.</p>
-
+<p>This guide uses github pages to deploy the website.</p>
+<h3 id="create-an-account">Create an account</h3>
+<p>Go to github.com and create your account</p>
+<h3 id="create-repository">Create repository</h3>
+<p>To be able to deploy a website with github pages, you will etiher need a domain, or use github&rsquo;s free domain.</p>
+<ul>
+<li>create a repos using the following name: <code>yourUsername.github.io</code></li>
+<li>Create a new directory called .github/workflows/hugo.yaml
+and paste the content from this <a href="/files/workshop/hugo.txt">file</a>.</li>
+<li>Push your source code by running:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git add .
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;initial commit&#34;</span>
+</span></span><span style="display:flex;"><span>git branch -M main
+</span></span><span style="display:flex;"><span>git remote add origin https://github.com/USERNAME/portfolio-site.git
+</span></span><span style="display:flex;"><span>git push -u origin main
+</span></span></code></pre></div><ul>
+<li>Visit your site at <a href="https://yourUsername.github.io">https://yourUsername.github.io</a></li>
+</ul>
+<h3 id="update-the-content">Update the content</h3>
+<p>To update the content that everybody can see, you will run these commands:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git pull
+</span></span><span style="display:flex;"><span>git add .
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;update&#34;</span>
+</span></span><span style="display:flex;"><span>git push
+</span></span></code></pre></div>
 </article>
 
             </div>
