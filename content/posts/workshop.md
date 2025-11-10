@@ -1,7 +1,7 @@
 +++
 title = 'Workshop'
 date = 2025-11-07T16:20:41-08:00
-draft = true
+draft = false 
 +++
 # Portfolio website workshop
 This guide is centered on creating a website that displays your abilities as a coder, engineer, artist, etc. It uses Hugo as a static website framework. This guide does not require code or any knowledge of it. You'll have to use your computer terminal, but do not let it intimidate you. If you ever forget how to save your work or any step from the process, this guide is made so it is easy to look back and copy the command.
