@@ -1,17 +1,11 @@
 <!DOCTYPE html>
-<html lang="en-us"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<html lang="en-us"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=37433&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   
-  <meta name="description" content="Getting started
-Creating a static website is easy. The first step for getting started is to install the prerequisites.
-Windows
-This workshop uses winget as a packed manager. winget should be installed in systems with windows 10 and later
-MacOS
-This workshop uses homebrew, to install homebrew run the next text in your terminal shell /bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&quot;
-installing git
-Git a free and open source version control system. We are going to use this as a tool to get our templates from the internet."> 
+  <meta name="description" content="Portfolio website workshop
+This guide is centered on creating a website that displays your abilities as a coder, engineer, artist, etc. It uses Hugo as a static website framework. This guide does not require code or any knowledge of it. You&rsquo;ll have to use your computer terminal, but do not let it intimidate you. If you ever forget how to save your work or any step from the process, this guide is made so it is easy to look back and copy the command."> 
 
   <title>
     
@@ -50,43 +44,102 @@ Git a free and open source version control system. We are going to use this as a
 
     
 
-    <h2 id="getting-started">Getting started</h2>
-<p>Creating a static website is easy. The first step for getting started is to install the prerequisites.</p>
+    <h1 id="portfolio-website-workshop">Portfolio website workshop</h1>
+<p>This guide is centered on creating a website that displays your abilities as a coder, engineer, artist, etc. It uses Hugo as a static website framework. This guide does not require code or any knowledge of it. You&rsquo;ll have to use your computer terminal, but do not let it intimidate you. If you ever forget how to save your work or any step from the process, this guide is made so it is easy to look back and copy the command.</p>
+<h2 id="getting-started">Getting started</h2>
+<p>Creating a static website is easy. The first step is installing the prerequisites.</p>
 <h4 id="windows"><code>Windows</code></h4>
-<p>This workshop uses <a href="https://learn.microsoft.com/en-us/windows/package-manager/winget/#install-winget">winget</a> as a packed manager. winget should be installed in systems with windows 10 and later</p>
-<h4 id="macos"><code>MacOS</code></h4>
-<p>This workshop uses <a href="https://docs.brew.sh/Installation">homebrew</a>, to install homebrew run the next text in your terminal shell<br> <code>/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&quot;</code></p>
-<h3 id="installing-git">installing git</h3>
-<p><a href="https://git-scm.com/">Git</a> a free and open source version control system. We are going to use this as a tool to get our templates from the internet.</p>
-<h4 id="windows-1">windows<br></h4>
-<p>using winget run the following command in the terminal.
-<code>winget install --id Git.Git -e --source winget</code></p>
+<p>This workshop uses <a href="https://learn.microsoft.com/en-us/windows/package-manager/winget/#install-winget">winget</a> a package manager. winget should be installed in systems with Windows 10 and later.</p>
+<h4 id="macos"><code>macOS</code></h4>
+<p>This workshop uses <a href="https://docs.brew.sh/Installation">homebrew</a>, another package manager. To install Homebrew, run the next text in your terminal shell.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/bin/bash -c <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span>
+</span></span></code></pre></div><h3 id="installing-git">Installing git</h3>
+<p><a href="https://git-scm.com/">Git</a> a free and open-source version control system. We are going to use this as a tool to get our templates from the internet.</p>
+<h4 id="windows-1"><code>Windows</code></h4>
+<p>Run the following command in the terminal.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>winget install --id Git.Git -e --source winget
+</span></span></code></pre></div><h4 id="macos-1"><code>MacOS</code></h4>
+<p>Run the following command line:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>brew install git
+</span></span></code></pre></div><h4 id="linux"><code>Linux</code></h4>
+<p>If you are using Linux, look for the command line that matches your distribution in the <a href="https://git-scm.com/install/linux">documentation.</a></p>
+<h3 id="installing-hugo">Installing HUGO</h3>
+<h4 id="windows-2"><code>Windows</code></h4>
+<p>Run the following command in the terminal.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>winget install Hugo.Hugo.Extended
+</span></span></code></pre></div><h4 id="macos-2"><code>macOS</code></h4>
+<p>Run the following command line:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>brew install hugo
+</span></span></code></pre></div><h4 id="linux-1"><code>Linux</code></h4>
+<p>If you are using Linux, look for the command line that matches your distribution at the <a href="https://gohugo.io/installation/linux/#repository-packages">repository packages.</a></p>
+<h3 id="misc">misc</h3>
+<p>Related to the theme we are using in this guide, if you are using another theme, you can skip to the next section.</p>
+<h4 id="npm">npm</h4>
 <ul>
-<li>
-<p><strong>Windows</strong></p>
+<li>Windows <code>winget install OpenJS.NodeJS.LTS</code></li>
+<li>macOS <code>brew install node</code></li>
+<li>Linux: You can just install npm as is in your distribution package manager.</li>
+</ul>
+<h4 id="tailwind-cli">Tailwind CLI</h4>
+<p>Install the Tailwind CSS CLI v4.0 or later:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>npm install --save-dev tailwindcss @tailwindcss/cli
+</span></span></code></pre></div><h2 id="selecting-your-starting-theme">Selecting your starting theme</h2>
+<p>To select the theme of your website. The theme used as an example is <a href="https://themes.gohugo.io/themes/aafu/">aafu</a>. Get the GitHub repository link by clicking <em><strong>download.</strong></em></p>
+<blockquote>
+<p>It is important to note that almost every theme, has its own instructions. If you decide to use another theme, you will have to look at the repository instructions. If you are a beginer, or have no knowledge, chatGPT its a good friend.</p>
+</blockquote>
+<h2 id="set-up">Set-up</h2>
+<p>To set up the files of our website, we can create a new website by running</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo new site myNewSite
+</span></span><span style="display:flex;"><span>cd myNewSite
+</span></span><span style="display:flex;"><span>git init 
+</span></span><span style="display:flex;"><span>git submodule add https://github.com/darshanbaral/aafu.git themes/aafu
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;theme = &#39;aafu&#39;&#34;</span> &gt;&gt; hugo.toml
+</span></span></code></pre></div><h3 id="config-files">Config files</h3>
+<p>A general step to modify the themes is to copy the configs file into your root directory. In this step, we will copy more than just the config file; we will also copy some other dependencies.</p>
 <ul>
-<li>Install Git</li>
-<li>Install Hugo</li>
-<li>Run <code>hugo new site mysite</code></li>
+<li>inside the themes/aafu folder. Copy the following to your root directory:</li>
 </ul>
-</li>
-<li>
-<p><strong>macOS</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>    assets/
+</span></span><span style="display:flex;"><span>    static/
+</span></span><span style="display:flex;"><span>    config.yaml
+</span></span><span style="display:flex;"><span>    package.json
+</span></span><span style="display:flex;"><span>    tailwind.config.js
+</span></span></code></pre></div><p>or run:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cp themes/aafu/assets/ themes/aafu/static/ themes/aafu/config.yaml themes/aafu/package.json themes/aafu/tailwind.config.js ./
+</span></span></code></pre></div><blockquote>
+<p>if you are using windows, use <code>copy</code> instead of <code>cp</code></p>
+</blockquote>
 <ul>
-<li>Install Homebrew</li>
-<li>Install Hugo</li>
-<li>Create your project</li>
+<li>Rename your config.yaml to hugo.yaml, and delete hugo.toml</li>
+<li>Inside your config.yaml, make sure that:</li>
 </ul>
-</li>
-<li>
-<p><strong>Linux</strong></p>
-<ul>
-<li>Install Git</li>
-<li>Install Hugo</li>
-<li>Create your project</li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">theme</span>: <span style="color:#ae81ff">aafu</span>
+</span></span></code></pre></div><ul>
+<li>Test the website</li>
 </ul>
-</li>
-</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo server
+</span></span></code></pre></div><p>This should display the default information that the theme has.</p>
+<h2 id="making-it-yours-">Making it yours !</h2>
+<p>To personalize it with your own information, we will modify the hugo.yaml we just copied.</p>
+<p>Inside that file, the names of the different sections of the file are easy to see.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">title</span>: <span style="color:#75715e">#title of your site</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">theme</span>: <span style="color:#ae81ff">aafu</span> <span style="color:#75715e">#the theme you are using, remember to uncomment this </span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#Inside params you will find the sections</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">params</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">profile</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">social</span>:
+</span></span></code></pre></div><p>To modify with your information, just change the information inside those parameters.</p>
+<h3 id="your-image">Your image</h3>
+<p>This file reads images from the static folder we copied. To change the default image, just replace it with your image and the same name.
+This also works for the page webpage icon</p>
+<h3 id="other-files">Other files</h3>
+<p>To share other files like resume PDFs or project images, the files should be placed in the static folder; from there you can call them from the config file.</p>
+<h2 id="deploy">Deploy</h2>
+<p>copy the <a href="/files/workshop/hugo.txt">hugo.yaml</a> into a new directory called</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>.github/workflows/
+</span></span></code></pre></div><p>There you can place the file.</p>
 
 </article>
 
