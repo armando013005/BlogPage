@@ -15,12 +15,5 @@
       <guid>https://blog.armando.ooo/posts/workshop/</guid>
       <description>&lt;h1 id=&#34;portfolio-website-workshop&#34;&gt;Portfolio website workshop&lt;/h1&gt;&#xA;&lt;p&gt;This guide is centered on creating a website that displays your abilities as a coder, engineer, artist, etc. It uses Hugo as a static website framework. This guide does not require code or any knowledge of it. You&amp;rsquo;ll have to use your computer terminal, but do not let it intimidate you. If you ever forget how to save your work or any step from the process, this guide is made so it is easy to look back and copy the command.&lt;/p&gt;</description>
     </item>
-    <item>
-      <title>This Page</title>
-      <link>https://blog.armando.ooo/posts/this-page/</link>
-      <pubDate>Sat, 08 Jun 2024 15:11:22 -0700</pubDate>
-      <guid>https://blog.armando.ooo/posts/this-page/</guid>
-      <description>&lt;h2 id=&#34;what-is-this&#34;&gt;What is this?&lt;/h2&gt;&#xA;&lt;p&gt;This is my blog page where I might or might not post interesting stuff that I have learned through my time.&lt;/p&gt;&#xA;&lt;h3 id=&#34;building-process&#34;&gt;Building process&lt;/h3&gt;&#xA;&lt;p&gt;I build this page with &lt;a href=&#34;https://gohugo.io/&#34;&gt;HUGO&lt;/a&gt;, a framework that offers a diverse set of templates to create a page of your own. I got a domain from &lt;a href=&#34;https://porkbun.com&#34;&gt;porkbun.com&lt;/a&gt; and then hosted using &lt;a href=&#34;https://github.com/&#34;&gt;GitHub&lt;/a&gt; pages.&lt;/p&gt;&#xA;&lt;p&gt;Everything is very straightforward, after downloading the &lt;a href=&#34;https://gohugo.io/installation/windows/#prerequisites&#34;&gt;dependencies&lt;/a&gt;, which is only, Go and the &lt;a href=&#34;https://gohugo.io/&#34;&gt;HUGO&lt;/a&gt; framework itself.&lt;/p&gt;</description>
-    </item>
   </channel>
 </rss>
